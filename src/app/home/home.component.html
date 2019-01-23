@@ -91,7 +91,7 @@
                                         <td> <input type="text" [(ngModel)]="var_nom"></td>
                                         <td> <input type="text" [(ngModel)]="var_prof"></td>
                                         <td> <input type="text" [(ngModel)]="var_et"></td>
-                                        <td> <input type="textarea" [(ngModel)]="var_desc"></td>
+                                        <td> <input type="text" [(ngModel)]="var_desc"></td>
                                         <td>
                                             <button (click)="modCours(cD,var_nom,var_prof,var_et,var_desc)">Modifier</button>
                                         </td>
@@ -125,12 +125,12 @@
                                             </thead>
                                             <tbody>
                                               <tr>
-                                                <td> <input type="text" value="{{ cD.nom }}" [(ngModel)]="varA_nom"></td>
-                                                <td> <input type="text" value="{{ cD.professeur }}" [(ngModel)]="varA_prof"></td>
-                                                <td> <input type="text" value="{{ cD.etudiants }}" [(ngModel)]="varA_et"></td>
-                                                <td> <input type="textarea" value="{{ cD.desc }}" [(ngModel)]="varA_desc"></td>
+                                                <td> <input type="text" [(ngModel)]="varA_nom"></td>
+                                                <td> <input type="text" [(ngModel)]="varA_prof"></td>
+                                                <td> <input type="text" [(ngModel)]="varA_et"></td>
+                                                <td> <input type="text" [(ngModel)]="varA_desc"></td>
                                                 <td>
-                                                    <button (click)="ajoutCours(cD,varA_nom,varA_prof,varA_et,varA_desc)">Ajouter</button>
+                                                    <button (click)="ajoutCours(varA_nom,varA_prof,varA_et,varA_desc)">Ajouter</button>
                                                 </td>
                                               </tr>
                                             </tbody>

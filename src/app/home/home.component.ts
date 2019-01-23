@@ -68,7 +68,7 @@ const index: number = this.cours.indexOf(c);
 }
 
 
-ajoutCours(c,varA_nom,varA_prof,varA_et,varA_desc){
+ajoutCours(varA_nom,varA_prof,varA_et,varA_desc){
       var co={nom:varA_nom,professeur:varA_prof,etudiants:varA_et,desc:varA_desc,dates:[]};
       this.cours.push(co);
       this.varA_nom="";
